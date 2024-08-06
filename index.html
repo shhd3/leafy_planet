@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leafy</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/Leafy.svg.svg" alt="Leafy Logo" style="height: 120px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="advice.html">Plant Advice</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="videos.html">Videos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="payment.html">Payment</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="hero text-center">
+            <h1>Welcome to Leafy Website</h1>
+            <p>Your one-stop destination for all things plants.</p>
+        </div>
+        <div class="container">
+            <section class="about text-center">
+                <h2>About Us</h2>
+                <p>We provide the best advice and products for plant lovers.</p>
+            </section>
+            <section class="c text-center">
+                <h2>The Best Seller In Our Store</h2>
+                <div class="row">
+                    
+                    <div class="col-md-4 mb-4">
+                        <div class="plant-group-card" data-toggle="collapse" data-target="#group1">
+                            <img src="images/flowers1.jpeg" alt="Group 1" class="img-fluid">
+                            <div class="plant-group-card-body">
+                                <h3>Flowers</h3>
+                                <p>Click to view Flowers</p>
+                            </div>
+                        </div>
+                        <div id="group1" class="collapse">
+                            <div class="row">
+                                
+                                <div class="col-md-6 mb-4">
+                                    <div class="plant-card" data-toggle="modal" data-target="#plantModal" data-plant-name="Peace lily" data-plant-price="$14.99">
+                                        <img src="images/peace lily.jpg" alt="flower 1" class="img-fluid">
+                                        <div class="plant-card-body">
+                                            <h3>Peace lily</h3>
+                                            <p class="price">$14.99</p>
+                                            <button class="btn btn-primary">Add to Cart</button>
+                                            <button class="btn btn-secondary"><i class="fas fa-heart"></i> Add to Wishlist</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="plant-card" data-toggle="modal" data-target="#plantModal" data-plant-name="Tea hybrid" data-plant-price="$10.99">
+                                        <img src="images/Tea hybrid rose.jpg" alt="flower 2" class="img-fluid">
+                                        <div class="plant-card-body">
+                                            <h3>Tea hybrid</h3>
+                                            <p class="price">$10.99</p>
+                                            <button class="btn btn-primary">Add to Cart</button>
+                                            <button class="btn btn-secondary"><i class="fas fa-heart"></i> Add to Wishlist</button>
+                                        </div>
+                                    </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="plant-group-card" data-toggle="collapse" data-target="#group2">
+                            <img src="images/plantsg.webp" alt="Group 2" class="img-fluid">
+                            <div class="plant-group-card-body">
+                                <h3>Plants</h3>
+                                <p>Click to view Plants</p>
+                            </div>
+                        </div>
+                        <div id="group2" class="collapse">
+                            <div class="row">
+                               
+                                <div class="col-md-6 mb-4">
+                                    <div class="plant-card" data-toggle="modal" data-target="#plantModal" data-plant-name="Monstera" data-plant-price="$14.99">
+                                        <img src="images/monstera.jpeg" alt="Plant 1" class="img-fluid">
+                                        <div class="plant-card-body">
+                                            <h3>Monstera</h3>
+                                            <p class="price">$14.99</p>
+                                            <button class="btn btn-primary">Add to Cart</button>
+                                            <button class="btn btn-secondary"><i class="fas fa-heart"></i> Add to Wishlist</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="plant-card" data-toggle="modal" data-target="#plantModal" data-plant-name="Calatheas" data-plant-price="$10.99">
+                                        <img src="images/calatheas.jpeg" alt="Plant 2" class="img-fluid">
+                                        <div class="plant-card-body">
+                                            <h3>Calatheas</h3>
+                                            <p class="price">$10.99</p>
+                                            <button class="btn btn-primary">Add to Cart</button>
+                                            <button class="btn btn-secondary"><i class="fas fa-heart"></i> Add to Wishlist</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="col-md-4 mb-4">
+                        <div class="plant-group-card" data-toggle="collapse" data-target="#group3">
+                            <img src="images/AG tools.jpg" alt="Group 3" class="img-fluid">
+                            <div class="plant-group-card-body">
+                                <h3>Agricultural Supplies</h3>
+                                <p>Click to view Agricultural Supplies</p>
+                            </div>
+                        </div>
+                        <div id="group3" class="collapse">
+                            <div class="row">
+                               
+                                <div class="col-md-6 mb-4">
+                                    <div class="plant-card" data-toggle="modal" data-target="#plantModal" data-plant-name="Supplies 1" data-plant-price="$20.00">
+                                        <img src="images/pot.jpg" alt="Supplies 1" class="img-fluid">
+                                        <div class="plant-card-body">
+                                            <h3>Plant pot </h3>
+                                            <p class="price">$20.00</p>
+                                            <button class="btn btn-primary">Add to Cart</button>
+                                            <button class="btn btn-secondary"><i class="fas fa-heart"></i> Add to Wishlist</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="plant-card" data-toggle="modal" data-target="#plantModal" data-plant-name="Supplies 2" data-plant-price="$9.99">
+                                        <img src="images/soil.jpg" alt="Supplies 2" class="img-fluid">
+                                        <div class="plant-card-body">
+                                            <h3>plant soil</h3>
+                                            <p class="price">$9.99</p>
+                                            <button class="btn btn-primary">Add to Cart</button>
+                                            <button class="btn btn-secondary"><i class="fas fa-heart"></i> Add to Wishlist</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <div class="modal fade" id="plantModal" tabindex="-1" aria-labelledby="plantModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="plantModalLabel">Plant Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p id="plant-name"></p>
+                    <p id="plant-price"></p>
+                    <button class="btn btn-primary">Add to Cart</button>
+                    <button class="btn btn-secondary"><i class="fas fa-heart"></i> Add to Wishlist</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center">
+        <p>&copy; 2024 Leafy Website. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+

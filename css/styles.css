@@ -1,0 +1,126 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; 
+    color: #333; 
+}
+
+header {
+    background-color: #a8d5ba;
+    margin-bottom: 20px;
+}
+
+.hero {
+    background-color: #d8e8d8;
+    padding: 50px 0;
+    color: #333;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.about {
+    padding: 100px 50px; 
+    border-radius: 8px; 
+}
+
+.about h2 {
+    margin-bottom: 20px; 
+    color: #4caf50; 
+}
+
+.about p {
+    font-size: 1.1em; 
+    line-height: 1.6; 
+    margin: 0 auto; 
+    max-width: 800px;
+}
+
+.best-seller {
+    background-color: #e8f5e9;
+    padding: 50px 0;
+}
+.plant-group-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plant-group-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.plant-group-card img {
+    width: 100%;
+    height: 200px;
+    transition: transform 0.3s ease;
+}
+
+.plant-group-card:hover img {
+    transform: scale(1.1);
+}
+
+
+.plant-group-card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.plant-group-card-body h3 {
+    margin: 10px 0;
+}
+
+.plant-card {
+    background-color: #ffffff; 
+    border: 1px solid #d0d0d0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.plant-card img {
+    width: 100%;
+    height: 200px;
+}
+
+.plant-card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.plant-card-body h3 {
+    margin: 10px 0;
+}
+
+.plant-card-body .price {
+    color: #4caf50;
+    font-size: 1.2em;
+}
+
+.plant-card-body .btn {
+    margin: 5px;
+}
+
+.plant-card:hover {
+    transform: scale(1.05);
+}
+.modal-content {
+    background-color: #ffffff; 
+}
+
+.modal-header {
+    background-color: #a8d5ba;
+    color: #333;
+}
+
+.modal-body {
+    padding: 20px;
+}
+footer{
+background-color: #a8d5ba;
+    padding: 20px 0;
+    color: #333; 
+}

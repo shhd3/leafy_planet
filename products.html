@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Display</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        .card {
+            margin-bottom: 20px;
+        }
+        .card-img-top {
+            height: 200px; 
+            object-fit: cover; 
+        }
+        .btn-primary {
+            margin-top: 10px;
+        }
+        .product-category {
+            display: none;
+        }
+        .product-category.active {
+            display: block;
+        }
+        .category-bar {
+            background-color: #f8f9fa;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+        .btn-group-toggle .btn {
+            width: 100%;
+        }
+        .cart {
+            position: fixed;
+            right: 20px;
+            top: 120px; 
+            width: 300px;
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .cart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .cart-body {
+            max-height: 300px;
+            overflow-y: auto;
+            margin-top: 10px;
+        }
+        .cart-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+    </style>
+    
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/Leafy.svg.svg" alt="Leafy Logo" style="height: 160px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="advice.html">Plant Advice</a></li>
+                <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="videos.html">Videos</a></li>
+                <li class="nav-item"><a class="nav-link" href="payment.html">Payment</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="container-fluid category-bar">
+    <div class="container">
+        <div class="btn-group btn-group-toggle d-flex justify-content-center" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+                <input type="radio" name="options" id="home-trees" autocomplete="off" checked> Home Trees
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="agricultural-tools" autocomplete="off"> Agricultural Tools
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="flowers" autocomplete="off"> Flowers
+            </label>
+        </div>
+    </div>
+</div>
+<div class="container mt-4">
+    <div id="home-trees-category" class="product-category active">
+        <div class="row">
+          
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/calatheas.jpeg" class="card-img-top" alt="Home Tree">
+                    <div class="card-body">
+                        <h5 class="card-title">calatheas</h5>
+                        <p class="card-text">$20.00</p>
+                        <button class="btn btn-primary add-to-cart" data-product="Home Tree" data-price="20.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/GoldenPothos.jpg" class="card-img-top" alt="Home Tree">
+                    <div class="card-body">
+                        <h5 class="card-title">GoldenPothos</h5>
+                        <p class="card-text">$20.00</p>
+                        <button class="btn btn-primary add-to-cart" data-product="Home Tree" data-price="20.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/monstera.jpeg" class="card-img-top" alt="Home Tree">
+                    <div class="card-body">
+                        <h5 class="card-title">monstera</h5>
+                        <p class="card-text">$20.00</p>
+                        <button class="btn btn-primary add-to-cart" data-product="Home Tree" data-price="20.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/philodendron.jpeg" class="card-img-top" alt="Home Tree">
+                    <div class="card-body">
+                        <h5 class="card-title">philodendron</h5>
+                        <p class="card-text">$20.00</p>
+                        <button class="btn btn-primary add-to-cart" data-product="Home Tree" data-price="20.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="agricultural-tools-category" class="product-category">
+        <div class="row">
+            
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/green shade.jpg" class="card-img-top" alt="Agricultural Tool">
+                    <div class="card-body">
+                        <h5 class="card-title">green shade</h5>
+                        <p class="card-text">$35.00</p>
+                        <button class="btn btn-primary add-to-cart" data-product="Agricultural Tool" data-price="35.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/soil.jpg" class="card-img-top" alt="Agricultural Tool">
+                    <div class="card-body">
+                        <h5 class="card-title">plants soil </h5>
+                        <p class="card-text">$35.00</p>
+                        <button class="btn btn-primary add-to-cart" data-product="Agricultural Tool" data-price="35.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/pot.jpg" class="card-img-top" alt="Agricultural Tool">
+                    <div class="card-body">
+                        <h5 class="card-title">plants pot</h5>
+                        <p class="card-text">$35.00</p>
+                        <button class="btn btn-primary add-to-cart" data-product="Agricultural Tool" data-price="35.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/AG tools.jpg" class="card-img-top" alt="Agricultural Tool">
+                    <div class="card-body">
+                        <h5 class="card-title">AG tools</h5>
+                        <p class="card-text">$35.00</p>
+                        <button class="btn btn-primary add-to-cart" data-product="Agricultural Tool" data-price="35.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="flowers-category" class="product-category">
+        <div class="row">
+           
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/lavender.jpg" class="card-img-top" alt="Flower">
+                    <div class="card-body">
+                        <h5 class="card-title">lavender</h5>
+                        <p class="card-text">$15.00</p>
+                        <button class="btn btn-primary add-to-cart" data-product="Flower" data-price="15.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/peace lily.jpg" class="card-img-top" alt="Flower">
+                    <div class="card-body">
+                        <h5 class="card-title">peace lily</h5>
+                        <p class="card-text">$15.00</p>
+                        <button class="btn btn-primary add-to-cart" data-product="Flower" data-price="15.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/alba rose.jpg" class="card-img-top" alt="Flower">
+                    <div class="card-body">
+                        <h5 class="card-title">alba rose</h5>
+                        <p class="card-text">$15.00</p>
+                        <button class="btn btn-primary add-to-cart" data-product="Flower" data-price="15.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/Tea hybrid rose.jpg" class="card-img-top" alt="Flower">
+                    <div class="card-body">
+                        <h5 class="card-title">tea hybrid</h5>
+                        <p class="card-text">$15.00</p>
+                        <button class="btn btn-primary add-to-cart" data-product="Flower" data-price="15.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="cart">
+    <div class="cart-header">
+        <h4>Shopping Cart</h4>
+        <button class="btn btn-danger btn-sm clear-cart">Clear</button>
+    </div>
+    <div class="cart-body">
+      
+    </div>
+    <div class="cart-footer">
+        <strong>Total: $<span class="cart-total">0</span></strong>
+        <a href="payment.html" class="btn btn-success btn-sm">Checkout</a>
+    </div>
+</div>
+<footer class="text-center">
+    <p>&copy; 2024 Leafy Website. All rights reserved.</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+     
+        $('input[type=radio][name=options]').change(function() {
+            $('.product-category').removeClass('active');
+            $('#' + this.id + '-category').addClass('active');
+        });
+
+        
+        $('.add-to-cart').click(function() {
+            var product = $(this).data('product');
+            var price = parseFloat($(this).data('price'));
+            var cartBody = $('.cart-body');
+            var cartTotal = $('.cart-total');
+            var currentTotal = parseFloat(cartTotal.text());
+
+            cartBody.append(`
+                <div class="cart-item">
+                    <p>${product} - $${price.toFixed(2)}</p>
+                </div>
+            `);
+            cartTotal.text((currentTotal + price).toFixed(2));
+        });
+
+        
+        $('.clear-cart').click(function() {
+            $('.cart-body').empty();
+            $('.cart-total').text('0');
+        });
+    });
+</script>
+
+</body>
+</html>
+
+
+
+
+
